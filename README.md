@@ -33,3 +33,10 @@ Assumes IIS.
     * AD hostname and root DN
     * AD bind user and password
 * Profit!
+
+What's the AD integration for?
+------------------------------
+
+Using a static XML file with Google Apps doesn't quite do enough - it works, but when Outlook asks for your password it assumes your Google Apps username is part of your email address (eg bob) instead of the full email address (bob@fqdn). 
+
+By using AD we're able to generate on-the-fly a custom XML file for each autodiscover request, which includes the username of the account and the full name of the user. 
