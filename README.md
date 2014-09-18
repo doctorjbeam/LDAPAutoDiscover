@@ -6,11 +6,12 @@ Outlook-compatible autodiscover.xml generator for AD domain-connected users.
 Requirements
 -----
 
-PHP5, including PHP5-LDAP
-Active Directory environment
-An AD user to bind with for searching
-A web server (Works well with IIS)
-A HTTPS site for greatest compatibility with client discovery
+* PHP5, including PHP5-LDAP
+* Active Directory environment
+* An AD user to bind with for searching
+* A web server (Works well with IIS)
+* A HTTPS site for greatest compatibility with client discovery
+* Ability to add a publicly-resolvable subdomain (autodiscover.fqdn) and set appropriate firewall forwarding rules
 
 Setup
 -----
